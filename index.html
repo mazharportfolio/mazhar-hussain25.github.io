@@ -1,14 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Mazhar Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mazhar Hussain Portfolio</title>
+
     <style>
         body {
             background: #101827;
             color: white;
-            font-family: Arial;
+            font-family: Arial, sans-serif;
             text-align: center;
             padding: 40px 15px;
+            margin: 0;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #38bdf8;
+            margin-bottom: 20px;
         }
 
         h1 {
@@ -16,20 +30,48 @@
             font-size: 35px;
         }
 
-        p {
-            font-size: 18px;
+        h2 {
+            font-size: 25px;
         }
 
-        button {
+        h3 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .contact-button {
+            display: inline-block;
             background: #38bdf8;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 8px;
+            color: #101827;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .contact-button:hover {
+            background: #0ea5e9;
+        }
+
+        .about {
+            max-width: 600px;
+            margin: 40px auto;
         }
     </style>
 </head>
 
 <body>
+
+    <img
+        src="mazhar.png"
+        alt="Mazhar Hussain"
+        class="profile-photo"
+    >
 
     <h1>Mazhar Hussain</h1>
 
@@ -37,12 +79,23 @@
 
     <h3>Sukkur IBA University</h3>
 
-    <p>
-        Hello! I am learning Python
-        and Web Development.
-    </p>
+    <p>Hello! I am learning Python and Web Development.</p>
 
-    <button>Contact Me</button>
+    <div class="about">
+        <h2>About Me</h2>
+
+        <p>
+            I am an Electrical Engineering student at
+            Sukkur IBA University. I am interested in technology,
+            programming, Python, and Web Development.
+            I want to improve my skills and build useful projects.
+        </p>
+    </div>
+
+    <a href="mailto:YOUR_EMAIL@example.com"
+       class="contact-button">
+        Contact Me
+    </a>
 
 </body>
 </html>
