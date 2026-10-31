@@ -4,10 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Mazhar Hussain | Developer Portfolio</title>
+<title>Mazhar Hussain | Web Developer Portfolio</title>
+
+<meta name="description" content="Mazhar Hussain - Student and aspiring web developer. Explore my skills, projects and collaboration opportunities.">
 
 <style>
-
 * {
     margin: 0;
     padding: 0;
@@ -16,20 +17,18 @@
 }
 
 body {
-    background: #0f172a;
-    color: white;
+    background: #0b1120;
+    color: #f8fafc;
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
-/* Navigation */
-
 nav {
+    background: #111c31;
+    padding: 18px 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 8%;
-    background: #111c31;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -43,22 +42,22 @@ nav a {
     color: white;
     text-decoration: none;
     margin-left: 18px;
+    font-size: 14px;
 }
 
 nav a:hover {
     color: #38bdf8;
 }
 
-/* Home */
-
 .hero {
     text-align: center;
-    padding: 90px 20px;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #0b1120, #172554);
 }
 
 .profile-photo {
-    width: 160px;
-    height: 160px;
+    width: 155px;
+    height: 155px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #38bdf8;
@@ -66,89 +65,113 @@ nav a:hover {
 }
 
 .hero h1 {
-    font-size: 42px;
+    font-size: 44px;
     color: #38bdf8;
 }
 
 .hero h2 {
-    margin: 10px 0;
+    margin: 12px 0;
+    font-size: 23px;
 }
 
 .hero p {
+    max-width: 650px;
+    margin: auto;
     color: #cbd5e1;
 }
 
 .button {
     display: inline-block;
-    margin-top: 25px;
-    padding: 12px 25px;
     background: #38bdf8;
-    color: #0f172a;
-    text-decoration: none;
+    color: #0b1120;
+    padding: 13px 27px;
+    margin-top: 25px;
     border-radius: 8px;
+    text-decoration: none;
     font-weight: bold;
 }
 
-/* Sections */
+.button:hover {
+    background: #0ea5e9;
+}
 
 section {
-    padding: 65px 10%;
+    padding: 75px 10%;
     text-align: center;
 }
 
-section h2 {
+.section-title {
     color: #38bdf8;
-    font-size: 30px;
+    font-size: 32px;
     margin-bottom: 25px;
 }
 
-/* About */
-
 .about p {
-    max-width: 700px;
+    max-width: 750px;
     margin: auto;
     color: #cbd5e1;
 }
 
-/* Skills and Projects */
+.highlight {
+    color: #38bdf8;
+}
 
-.skills-container,
-.projects-container {
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+}
+
+.card {
+    background: #172337;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 28px 22px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
+
+.card h3 {
+    color: #38bdf8;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #cbd5e1;
+    font-size: 15px;
+}
+
+.collaboration {
+    background: #111c31;
+}
+
+.collaboration p {
+    max-width: 750px;
+    margin: auto;
+    color: #cbd5e1;
+}
+
+.process {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
 
-.card {
-    background: #1e293b;
-    padding: 25px;
-    border-radius: 12px;
+.process .card {
     width: 220px;
-    border: 1px solid #334155;
 }
-
-.card h3 {
-    color: #38bdf8;
-    margin-bottom: 10px;
-}
-
-.card p {
-    color: #cbd5e1;
-}
-
-/* Education */
-
-.education p {
-    color: #cbd5e1;
-}
-
-/* Contact Form */
 
 .contact-form {
-    max-width: 500px;
+    max-width: 550px;
     margin: 30px auto;
-    background: #1e293b;
+    background: #172337;
     padding: 30px;
     border-radius: 12px;
     text-align: left;
@@ -156,7 +179,7 @@ section h2 {
 
 .contact-form label {
     display: block;
-    margin-top: 12px;
+    margin-top: 14px;
     color: #cbd5e1;
 }
 
@@ -166,15 +189,15 @@ section h2 {
     width: 100%;
     padding: 13px;
     margin-top: 7px;
-    border: 1px solid #475569;
     border-radius: 7px;
-    background: #0f172a;
+    border: 1px solid #475569;
+    background: #0b1120;
     color: white;
     font-size: 15px;
 }
 
 .contact-form textarea {
-    height: 120px;
+    height: 130px;
     resize: vertical;
 }
 
@@ -183,10 +206,10 @@ section h2 {
     padding: 14px;
     margin-top: 20px;
     background: #38bdf8;
-    color: #0f172a;
+    color: #0b1120;
     border: none;
     border-radius: 7px;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -195,19 +218,19 @@ section h2 {
     background: #0ea5e9;
 }
 
-/* Footer */
-
 footer {
     background: #111c31;
+    padding: 30px 15px;
     text-align: center;
-    padding: 25px;
     color: #cbd5e1;
 }
 
-/* Mobile Responsive */
+footer a {
+    color: #38bdf8;
+    text-decoration: none;
+}
 
-@media (max-width: 600px) {
-
+@media(max-width: 650px) {
     nav {
         flex-direction: column;
         gap: 15px;
@@ -215,25 +238,27 @@ footer {
 
     nav a {
         margin: 5px;
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .hero h1 {
         font-size: 32px;
     }
 
-    section {
-        padding: 45px 6%;
+    .hero h2 {
+        font-size: 19px;
     }
 
+    section {
+        padding: 55px 6%;
+    }
 }
-
 </style>
 </head>
 
 <body>
 
-<!-- Navigation -->
+<!-- NAVIGATION -->
 
 <nav>
     <h2>Mazhar.</h2>
@@ -242,12 +267,13 @@ footer {
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </div>
 </nav>
 
-<!-- Home -->
+<!-- HOME -->
 
 <div class="hero" id="home">
 
@@ -257,103 +283,249 @@ footer {
 
     <h1>Mazhar Hussain</h1>
 
-    <h2>Future Software Developer</h2>
+    <h2>Aspiring Web Developer</h2>
 
     <p>
-        Learning Python and Web Development.
-        Building my skills through practical projects.
+        Hello! I am a student and aspiring developer
+        passionate about technology, programming
+        and building websites.
+        I am currently learning Python and Web Development
+        and developing my skills through practical projects.
     </p>
 
+    <a href="#projects" class="button">
+        Explore My Work
+    </a>
+
     <a href="#contact" class="button">
-        Contact Me
+        Discuss a Project
     </a>
 
 </div>
 
-<!-- About -->
+<!-- ABOUT -->
 
 <section class="about" id="about">
 
-    <h2>About Me</h2>
+    <h2 class="section-title">About Me</h2>
 
     <p>
-        I am a student at Sukkur IBA University.
-        I am passionate about technology, programming
-        and software development. I am currently
-        learning Python and Web Development and
-        improving my technical skills through practice.
+        I am a student at
+        <span class="highlight">Sukkur IBA University</span>.
+
+        I am passionate about technology,
+        programming and software development.
+
+        I am currently learning Python, HTML and CSS.
+        My goal is to become a skilled software developer
+        by building practical projects and continuously
+        improving my technical knowledge.
+
+        I believe in hard work, honesty,
+        continuous learning and professional communication.
     </p>
 
 </section>
 
-<!-- Skills -->
+<!-- SKILLS -->
 
 <section id="skills">
 
-    <h2>My Skills</h2>
+    <h2 class="section-title">My Technical Skills</h2>
 
-    <div class="skills-container">
+    <div class="cards">
 
         <div class="card">
             <h3>HTML</h3>
-            <p>Learning web page structure.</p>
+            <p>
+                Learning to create structured
+                and accessible web pages.
+            </p>
         </div>
 
         <div class="card">
             <h3>CSS</h3>
-            <p>Learning website styling and design.</p>
+            <p>
+                Learning modern website styling
+                and responsive layouts.
+            </p>
         </div>
 
         <div class="card">
             <h3>Python</h3>
-            <p>Learning programming fundamentals.</p>
+            <p>
+                Learning programming,
+                problem solving and logic.
+            </p>
         </div>
 
     </div>
 
 </section>
 
-<!-- Projects -->
+<!-- SERVICES -->
+
+<section id="services">
+
+    <h2 class="section-title">What I Can Work On</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Personal Websites</h3>
+            <p>
+                Simple personal websites
+                and online portfolios using HTML and CSS.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Responsive Web Pages</h3>
+            <p>
+                Beginner-level web layouts
+                for mobile and desktop screens.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Website Design</h3>
+            <p>
+                Simple, clean and user-friendly
+                website layouts.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- INTERNATIONAL COLLABORATION -->
+
+<section class="collaboration">
+
+    <h2 class="section-title">
+        Let's Connect Worldwide
+    </h2>
+
+    <p>
+        I welcome opportunities to connect with people
+        and discuss suitable beginner-friendly web projects
+        from around the world.
+
+        Whether you are an individual, student,
+        startup or organization, I would be happy
+        to learn about your ideas and explore
+        how I can contribute.
+    </p>
+
+    <a href="#contact" class="button">
+        Start a Conversation
+    </a>
+
+</section>
+
+<!-- PROJECTS -->
 
 <section id="projects">
 
-    <h2>My Projects</h2>
+    <h2 class="section-title">My Projects</h2>
 
-    <div class="projects-container">
+    <div class="cards">
 
         <div class="card">
-            <h3>Developer Portfolio</h3>
-            <p>My personal portfolio website.</p>
+            <h3>Personal Portfolio</h3>
+            <p>
+                My own portfolio website,
+                created using HTML and CSS.
+            </p>
         </div>
 
         <div class="card">
-            <h3>Coming Soon</h3>
-            <p>More programming projects will be added here.</p>
+            <h3>Python Practice</h3>
+            <p>
+                Programming exercises and
+                learning projects in Python.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Future Projects</h3>
+            <p>
+                More practical projects
+                will be added as I develop my skills.
+            </p>
         </div>
 
     </div>
 
 </section>
 
-<!-- Education -->
+<!-- WORK PROCESS -->
 
-<section class="education">
+<section>
 
-    <h2>Education</h2>
+    <h2 class="section-title">How I Approach Projects</h2>
 
-    <h3>Sukkur IBA University</h3>
+    <div class="process">
 
-    <p>Student | Learning Technology and Programming</p>
+        <div class="card">
+            <h3>01. Understand</h3>
+            <p>
+                Understand the project requirements
+                and goals.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>02. Plan</h3>
+            <p>
+                Plan a suitable structure
+                and design.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>03. Build</h3>
+            <p>
+                Work on the agreed features
+                using my current skills.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>04. Review</h3>
+            <p>
+                Review the result and
+                make agreed improvements.
+            </p>
+        </div>
+
+    </div>
 
 </section>
 
-<!-- Contact Form -->
+<!-- EDUCATION -->
+
+<section>
+
+    <h2 class="section-title">Education</h2>
+
+    <h3>Sukkur IBA University</h3>
+
+    <p>Student | Technology and Programming</p>
+
+</section>
+
+<!-- CONTACT -->
 
 <section id="contact">
 
-    <h2>Contact Me</h2>
+    <h2 class="section-title">Have a Project in Mind?</h2>
 
-    <p>Please complete the form to contact me.</p>
+    <p>
+        Tell me about your project.
+        I would be happy to discuss it.
+    </p>
 
     <form class="contact-form"
           action="mailto:mazhar.beef25@iba-suk.edu.pk"
@@ -361,47 +533,62 @@ footer {
           enctype="text/plain">
 
         <label>Full Name *</label>
+
         <input type="text"
-               name="Full Name"
-               placeholder="Enter your full name"
+               name="Name"
+               placeholder="Your full name"
                required>
 
         <label>Email Address *</label>
+
         <input type="email"
                name="Email"
-               placeholder="Enter your email"
+               placeholder="Your email address"
                required>
 
-        <label>Gender (Optional)</label>
-        <select name="Gender">
-            <option value="">Prefer not to say</option>
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
+        <label>Country (Optional)</label>
+
+        <input type="text"
+               name="Country"
+               placeholder="Your country">
+
+        <label>Project Type *</label>
+
+        <select name="Project Type" required>
+            <option value="">Select project type</option>
+            <option>Personal Website</option>
+            <option>Portfolio Website</option>
+            <option>Business Website</option>
+            <option>Other</option>
         </select>
 
-        <label>Contact Number *</label>
-        <input type="tel"
-               name="Contact Number"
-               placeholder="Enter contact number"
-               required>
+        <label>Project Details *</label>
 
-        <label>Your Message *</label>
-        <textarea name="Message"
-                  placeholder="Write your message here"
+        <textarea name="Project Details"
+                  placeholder="Tell me about your project..."
                   required></textarea>
 
         <button type="submit">
-            Submit & Contact Me
+            Send Project Inquiry
         </button>
 
     </form>
 
 </section>
 
-<!-- Footer -->
+<!-- FOOTER -->
 
 <footer>
-    <p>© 2026 Mazhar Hussain | Developer Portfolio</p>
+
+    <h3>Mazhar Hussain</h3>
+
+    <p>Aspiring Web Developer | Pakistan</p>
+
+    <p>
+        © 2026 Mazhar Hussain.
+        All Rights Reserved.
+    </p>
+
 </footer>
 
 </body>
